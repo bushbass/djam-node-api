@@ -7,7 +7,7 @@ var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
 mongoose.promise = global.Promise;
 mongoose
-  .connect("mongodb://bushbass:bd3snd@ds115768.mlab.com:15768/djam")
+  .connect("mongodb://<username><password>.mlab.com:15768/djam")
   .then(() => console.log("connection successful"))
   .catch(err => console.error(err));
 
